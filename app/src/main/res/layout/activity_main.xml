@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Num"
+        android:inputType="number"
+        android:rotationX="33"
+        android:textColorHint="#42A917"
+        app:layout_constraintBottom_toTopOf="@+id/Num2"
+        app:layout_constraintEnd_toEndOf="@+id/Num2"
+        app:layout_constraintStart_toStartOf="@+id/Num2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Sec Num"
+        android:inputType="number"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/But1"
+        app:layout_constraintEnd_toEndOf="@+id/But1"
+        app:layout_constraintStart_toStartOf="@+id/But1"
+        app:layout_constraintTop_toBottomOf="@+id/Num1" />
+
+    <Button
+        android:id="@+id/But1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addnumber"
+        android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@+id/tvresult"
+        app:layout_constraintEnd_toEndOf="@+id/tvresult"
+        app:layout_constraintStart_toStartOf="@+id/tvresult"
+        app:layout_constraintTop_toBottomOf="@+id/Num2" />
+
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/But1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
